@@ -10,10 +10,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class FlightCardComponent implements OnInit {
   id: number;
   name: string;
-  description: string;
+  description: string|null = null;
   image: string;
   price: number|null = null;
-  stock: number;
+  stock: number|null = null;
   from: string;
 
   constructor() { }

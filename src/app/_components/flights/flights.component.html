@@ -7,11 +7,11 @@
         <div class="col s12" *ngFor="let flight of flights">
             <app-flight-card 
             description="{{flight.description}}" 
-            from="Flights" 
             id="{{flight.id}}" 
             image="{{flight.image}}" price="{{flight.price}}" 
             name="{{flight.name}}" 
-            stock="{{flight.stock}}">
+            stock="{{flight.stock}}"
+            from="Flights" >
             </app-flight-card>
         </div>
     </section>

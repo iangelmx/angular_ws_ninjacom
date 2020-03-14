@@ -14,6 +14,24 @@ export class ProfileComponent implements OnInit {
   constructor( private flightService: FlightsService ) { }
 
   ngOnInit(): void {
+    this.bookings = [
+      {
+        id: 3,
+        name: 'Saturno',
+        description: 'Lorem ipsum Aut nisi laboriosam similique. Aperiam eligendi enim ipsam mollitia dolore fuga quas doloremque nemo in, illo reprehenderit.',
+        image: '../../../assets/saturn.png',
+        price: 90,
+        stock: 5
+      },
+      {
+        id: 4,
+        name: 'Juno',
+        description: 'Lorem ipsum Aut nisi laboriosam similique. Aperiam eligendi enim ipsam mollitia dolore fuga quas doloremque nemo in, illo reprehenderit.',
+        image: '../../../assets/juno.jpg',
+        price: 222,
+        stock: 5
+      }
+    ];
     //this.userInfo = this.flightService.getUserInfo();
     
   }
