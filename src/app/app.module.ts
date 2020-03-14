@@ -4,16 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ProfileComponent } from './profile/profile.component';
+import{
+  NavbarComponent,
+  HomepageComponent,
+  ProfileComponent,
+  FlightCardComponent,
+  FlightsComponent
+} from './_components/index';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    ProfileComponent
+    ProfileComponent,
+    FlightsComponent,
+    FlightCardComponent
   ],
   imports: [
     BrowserModule,

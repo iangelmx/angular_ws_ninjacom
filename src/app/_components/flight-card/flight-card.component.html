@@ -1,0 +1,25 @@
+
+<div class="card horizontal">
+    <div class="card-image">
+        <img src="{{image}}">
+    </div>
+    <div class="card-stacked">
+        <div *ngIf="from==='Flights'" class="card-content">
+            <h4>{{name}}</h4>
+            <div class="price">Desde: {{price}} Odiseas</div>
+            <p>
+                {{description}}
+            </p>
+            <button class="btn indigo darken-4" style="margin-top: 10px;" routerLink="/booking">Reservar viaje</button>
+        </div>
+
+        <div *ngIf="from==='Profile'" class="card-content">
+            <h4>{{name}}</h4>
+            <p>
+                {{description}}
+            </p>
+            <button class="btn red darken-4" style="margin-top: 10px;" routerLink="/booking">Eliminar</button>
+        </div>
+    </div>
+</div>
+
